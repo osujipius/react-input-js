@@ -1,29 +1,33 @@
 {
-    "name": "react-input-js",
-    "version": "1.0.0",
-    "description": "React input component",
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
-        "build:esm": "tsc",
-        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
-    },
-    "author": "Pius Osuji",
-    "license": "MIT",
-    "devDependencies": {
-        "@types/node": "^20.8.10",
-        "@types/react": "^18.2.36",
-        "@types/react-dom": "^18.2.14",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "typescript": "^5.2.2"
-    },
-    "peerDependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
-    }
+  "name": "react-input-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osujipius/react-input-js.git"
+  },
+  "version": "1.0.1",
+  "description": "React input component",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "author": "Pius Osuji",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.36",
+    "@types/react-dom": "^18.2.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
