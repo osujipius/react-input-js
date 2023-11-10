@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/osujipius/react-input-js.git"
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React input component",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -24,13 +24,11 @@
     "@types/react-dom": "^18.2.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "dependencies": {
-    "tailwindcss": "^3.3.5"
   }
 }
