@@ -1,3 +1,6 @@
+![html](https://github.com/osujipius/react-input-js/assets/94569961/b35a80d4-390d-4a6e-83ad-f6750e76a278)
+
+
 # React-Input-Js
 
 An input component for your React app.
