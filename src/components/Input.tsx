@@ -1,5 +1,4 @@
 import React from 'react';
-import '../input.css';
 
 type InputProps = {
   label?: string;
@@ -11,18 +10,33 @@ type InputProps = {
 
 export default function Input({ label, type, name, id, placeholder }: InputProps) {
   return (
-    <div>
-      <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', maxWidth: '380px' }}>
+      <label
+        htmlFor="email"
+        style={{
+          fontWeight: 500,
+          letterSpacing: '0.5px',
+          flexGrow: 1,
+          display: 'flex',
+          alignItems: 'self-end'
+        }}
+      >
         {label}
       </label>
-      <div className="mt-2">
-        <input
-          type={type}
-          name={name}
-          id={id}
-          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          placeholder={placeholder}
-        />
+      <div
+        style={{
+          background: '#FFFFFF',
+          border: '1px solid #E2E8F0',
+          boxSizing: 'border-box',
+          borderRadius: '4px',
+          display: 'flex',
+          alignItems: 'center',
+          margin: '2px 0 12px 0',
+          padding: '1rem',
+          position: 'relative'
+        }}
+      >
+        <input style={{ border: 'none', padding: 0, fontSize: '1rem', lineHeight: '100%', width: '100%', outline: 'none' }} type={type} name={name} id={id} placeholder={placeholder} />
       </div>
     </div>
   );
